@@ -1,0 +1,16 @@
+  <PowerSelect
+  @searchEnabled={{true}}
+  @options={{this.options}}
+  @selected={{this.title}}
+  @searchField={{"title"}}
+  @onChange={{this.renderSelection}}
+  @dropdownClass="policy-dropdown"
+  @allowClear={{true}}
+  @closeOnSelect={{true}}
+  @highlightOnHover={{true}}
+  as |thing|
+>
+  {{thing.title}}
+</PowerSelect>
+
+{{yield}}
